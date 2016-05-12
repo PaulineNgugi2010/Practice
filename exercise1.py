@@ -1,12 +1,14 @@
-
-
-
-
-
-
-
-
-
+print min([3, 41, 12, 9, 74, 15])
+print max([3, 41, 12, 9, 74, 15])
+largest = None
+smallest = None
+for itervar in [3, 41, 12, 9, 74, 15]:
+	if itervar > largest:
+		largest =itervar
+	if itervar < smallest:
+		smallest = itervar
+print 'Largest:', largest
+print 'Smallest:', smallest
 
 count = 0
 total = 0
