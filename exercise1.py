@@ -1,14 +1,53 @@
+t = ['a','b']
+t2 = ['c','d']
+t3= t.append(t2)
+print t3
+
+
+word = 'X-DSPAM-Confidence: 0.8475'
+print word[:18]
+fruit = 'banana'
+length = len(fruit)
+last = fruit[length-2]
+
+index = 0
+while index <len(fruit):
+	letter = fruit[index]
+	#print letter
+	index = index + 1
+
+
+for char in fruit:
+	print char
+
+'''<len(fruit):
+	letter =fruit[index-1]
+	print letter
+	index = index +1 '''
+
+
+'''def counter('a'):
+	count = 0
+	for letter in word:
+		if letter == a:
+			count = count + 1
+		return count
+print counter(a, banana)
+
 print min([3, 41, 12, 9, 74, 15])
 print max([3, 41, 12, 9, 74, 15])
-largest = None
-smallest = None
-for itervar in [3, 41, 12, 9, 74, 15]:
-	if itervar > largest:
-		largest =itervar
-	if itervar < smallest:
-		smallest = itervar
-print 'Largest:', largest
-print 'Smallest:', smallest
+
+def min(values):
+	largest = None
+	smallest = None
+	for itervar in values:
+		if smallest is None or itervar < smallest:
+			smallest = itervar
+		return 'Smallest:', smallest
+		
+print min([3, 41, 12, 9, 74, 15])
+
+
 
 count = 0
 total = 0
@@ -94,4 +133,4 @@ def computegrade (score):
 		grade = 'F'
 	return grade
 print computegrade(0.6)
-print computegrade(0.95)
+print computegrade(0.95)'''
